@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b96842e2f0f458afd2ce3d1a8f4809cc14a68131
 const musicas = [
     {id: 1, nome: "elton", img: "./arthur.png", audio: "./lofi.mp3", key: "w"},
     {id: 2, nome: "elton", img: "./arthur.png", audio: "./som2.mp3", key: "a"},
@@ -38,7 +41,11 @@ musicas.forEach(musica => {
     );
 
     container.appendChild(div);
+<<<<<<< HEAD
 });
 =======
 addEventListener
 >>>>>>> 8e53f97 (daviandany)
+=======
+});
+>>>>>>> b96842e2f0f458afd2ce3d1a8f4809cc14a68131
