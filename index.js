@@ -1,13 +1,10 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b96842e2f0f458afd2ce3d1a8f4809cc14a68131
+
 const musicas = [
-    {id: 1, nome: "elton", img: "./arthur.png", audio: "./lofi.mp3", key: "w"},
-    {id: 2, nome: "elton", img: "./arthur.png", audio: "./som2.mp3", key: "a"},
-    {id: 3, nome: "elton", img: "./arthur.png", audio: "./som3.mp3", key: "s"},
-    {id: 4, nome: "elton", img: "./arthur.png", audio: "./som4.mp3", key: "d"},
-];
+    {id: 1, nome: "elton", img: "./arthur.png", audio: "./lofi.mp3", key: "1"},
+    {id: 2, nome: "elton", img: "./arthur.png", audio: "./som2.mp3", key: "2"},
+    {id: 3, nome: "elton", img: "./arthur.png", audio: "./som3.mp3", key: "3"},
+    {id: 4, nome: "elton", img: "./arthur.png", audio: "./som4.mp3", key: "4"},
+];//array de objetos
 
 const container = document.getElementById("lista-musicas");
 
@@ -25,27 +22,27 @@ musicas.forEach(musica => {
 
     div.appendChild(audio);
 
-    // Clique
-    div.addEventListener('click', () => {
-        audio.currentTime = 0;
-        audio.play();
+    div.addEventListener('click', function(){
+        if (audio.paused) {
+            audio.play(); 
+        } else {
+            audio.pause(); 
+        }
     });
 
     document.addEventListener('keydown',
         function(event){
             if (event.key === musica.key) {
-                audio.currentTime = 0;
-                audio.play();
+                if(audio.paused){
+                    audio.play()
+                }else{
+                    audio.pause()
+                }
             }
         }
     );
 
     container.appendChild(div);
-<<<<<<< HEAD
-});
-=======
-addEventListener
->>>>>>> 8e53f97 (daviandany)
-=======
-});
->>>>>>> b96842e2f0f458afd2ce3d1a8f4809cc14a68131
+
+});//forEach
+
