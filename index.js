@@ -1,53 +1,57 @@
 
 const musicas =[
-    { id: 1, nome: "Lofi Relax", img: "img/exemplo1.jpg", audio: "audio1.mp3",key:"1" },
-    { id: 2, nome: "Estudo Intenso", img: "img/exemplo1.jpg", audio: "audio2.mp3",key:"2"},
-    { id: 3, nome: "Noite de Chuva", img: "img/exemplo1.jpg", audio: "audio3.mp3",key:"3"},
-    { id: 4, nome: "Café da Manhã", img: "img/exemplo1.jpg", audio: "audio4.mp3",key:"4" },
+    { id: 1, nome: "Lofi Relax", img: "img/exemplo1.jpg", audio: "musicas/musica1.mp3",key:"1" },
+    { id: 2, nome: "Estudo Intenso", img: "img/exemplo1.jpg", audio: "musicas/musica2.mp3",key:"2"},
+    { id: 3, nome: "Noite de Chuva", img: "img/exemplo1.jpg", audio: "musicas/musica3.mp3",key:"3"},
+    { id: 4, nome: "Café da Manhã", img: "img/exemplo1.jpg", audio: "musicas/musica4.mp3",key:"4" },
 ];//array de objetos
 
-const container = document.querySelector(".lista-musicas");
+const $container = $(".lista-musicas");
 
 musicas.forEach(musica => {
 
-    const div = document.createElement('div');
-    div.classList.add('musica');
+    const $div = $("<div>").addClass('musica'); 
 
-    const audio = document.createElement('audio');
-    audio.src = musica.audio;
+    const $audio = $("<audio>").addClass('audio');
+    $audio.attr("src", musica.audio);
+    
 
-    const li = document.createElement('li');
-    li.classList.add('musica');
-
-    li.innerHTML = `
+    $div.html(`
         <img src="${musica.img}" alt="${musica.nome}">
         <p>${musica.nome} (${musica.key})</p>
-    `;
+    `);
 
+    $div.append($audio);
 
-    div.appendChild(audio);
-
-    div.addEventListener('click', function(){
-        if (audio.paused) {
-            audio.play(); 
+    //Click play/pause
+    var $pureAudio = $audio[0];
+    
+    $div.on('click', ()=>{ 
+        if($pureAudio.paused){
+            $pureAudio.play();
         } else {
-            audio.pause(); 
+            $pureAudio.pause();
         }
     });
 
-    document.addEventListener('keydown',
+    $(document).on('keydown',
         function(event){
+
             if (event.key === musica.key) {
-                if(audio.paused){
-                    audio.play()
+                if($pureAudio.paused){
+                    $pureAudio.play()
                 }else{
-                    audio.pause()
+                    $pureAudio.pause()
                 }
+                console.log(event.key);
             }
         }
     );
+    
 
-    container.appendChild(div);
-    container.appendChild(li);
+    $container.append($div);
 });//forEach
+
+
+
 
