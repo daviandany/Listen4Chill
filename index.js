@@ -7,9 +7,13 @@ const musicas =[
 ];//array de objetos
 
 const $container = $(".lista-musicas");
+let musicasTocando = []
+
+function pausar() {
+    document.querySelectorAll("audio").forEach(musica => musica.pause())
+}
 
 musicas.forEach(musica => {
-
     const $div = $("<div>").addClass('musica'); 
 
     const $audio = $("<audio>").addClass('audio');
@@ -21,24 +25,32 @@ musicas.forEach(musica => {
         <p>${musica.nome} (${musica.key})</p>
     `);
 
-    $div.append($audio);
+    $div.append($audio);    
 
     //Click play/pause
     var $pureAudio = $audio[0];
+
+    musicasTocando.push({
+        key: musica.key,
+        audio: $pureAudio
+    })
     
     $div.on('click', ()=>{ 
         if($pureAudio.paused){
+            pausar()
             $pureAudio.play();
         } else {
             $pureAudio.pause();
         }
     });
 
+
     $(document).on('keydown',
         function(event){
 
             if (event.key === musica.key) {
                 if($pureAudio.paused){
+                    pausar()
                     $pureAudio.play()
                 }else{
                     $pureAudio.pause()
@@ -51,7 +63,3 @@ musicas.forEach(musica => {
 
     $container.append($div);
 });//forEach
-
-
-
-
