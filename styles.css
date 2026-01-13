@@ -115,3 +115,12 @@ transition: all 0.4s ease-in-out;
     justify-content: center;
     padding-top:30px; 
 }
+
+.changingBackground{
+    display:flex;
+    padding-left: 1050px;
+}
+
+@media(max-width:700px){
+    *{}
+};

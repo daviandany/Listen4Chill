@@ -105,8 +105,10 @@ $("h1").hover(
 )
 
 
+
 //to do:
 
 //do random music playing
 //do night mode
 //buttons to choice the background-color
+//menu to actions: changing background
