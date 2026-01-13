@@ -20,6 +20,7 @@ body {
     background-color: var(--Violata);
     font-family: "Inter", sans-serif;
     font-size: 30px;
+    overflow-x: hidden;
 }
 
 
@@ -110,16 +111,46 @@ opacity: 0.2;
 transition: all 0.4s ease-in-out;
 }
 
-.random-music{
+.random-music {
     display:flex;
     justify-content: center;
-    padding-top:30px; 
+    margin-right:-600px;
 }
 
-.changingBackground{
+.playRandom{
+display:flex;
+align-content: center;
+justify-content: center;
+}
+
+.seeBackgroundButtons{
+    margin-left:300px;
+}
+
+.hiddenBackgrounds{
+ margin-left:300px;
+}
+ 
+
+.redColor{
+    background-color:red !important;
+}
+
+.blueColor{
+    background-color: blue;
+}
+
+.aquaColor{
+
+}
+
+.yellowColor{
+
+}
+/* .changingBackground{
     display:flex;
     padding-left: 1050px;
-}
+} */
 
 @media(max-width:700px){
     *{}

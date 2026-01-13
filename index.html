@@ -23,22 +23,21 @@
 </section>
 
 <section class="random-music">
-<button>Play random</button>
- <button class="seeBackgroundButtons">change backgrounds</button>
 
+<div class="playRandom">
+<button onclick="playRandomMusic()">Play random</button>
+</div>
         <div class="hiddenBackgrounds"> 
-        <button>color1</button>
-        <button>color2</button>
-        <button>color3</button>
-        <button>color4</button>
-        
+        <button id="seeBackgroundButtons">change backgrounds</button>
+
+    <div class="hiddenColor"> 
+        <button id="colorRed">color1</button>
+        <button id="colorBlue">color2</button>
+        <button id="colorAqua">color3</button>
+        <button id="colorYellow">color4</button>
+    </div>
         </div>
 </section>
-
- <section class="changingBackground">
-       
-    </section>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./index.js" charset="utf-8"></script>

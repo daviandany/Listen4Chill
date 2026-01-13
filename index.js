@@ -90,7 +90,7 @@ musicas.forEach(musica => {
 });//forEach
 
 
-//h1 callbackext
+//h1 callbacktext
 var storingTheH1Text = $('h1').text();
 
 //hover to h1
@@ -104,11 +104,39 @@ $("h1").hover(
     }
 )
 
+function playRandomMusic() {
+    pausar();
+    $(".musica").removeClass('opacityToMusics');
+
+    const randomIndex = Math.floor(Math.random() * musicas.length);
+    let music = musicsPlaying[randomIndex];
+
+    music.audio.currentTime = 0
+    music.audio.play()
+
+    $(".musica").removeClass('opacityToMusics');
+}
+
+var colorsHidden = $(".hiddenColor").hide();
+$("#seeBackgroundButtons").on("click", function(){
+    $(colorsHidden).slideToggle();
+})
+
+$('#colorRed').on("click", function(event){
+$("body").toggleClass('redColor');
+$('#colorRed')
+    
+})
+
+$("#colorBlue").on("click", function(){
+    $("body").toggleClass('blueColor');
+})
+
 
 
 //to do:
-
-//do random music playing
+//do stop button to random button
 //do night mode
-//buttons to choice the background-color
-//menu to actions: changing background
+
+
+
