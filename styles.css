@@ -16,11 +16,14 @@
     --branco: white;
 }
 
+
+
 body {
-    background-color: var(--Violata);
+    min-height: 100vh;
     font-family: "Inter", sans-serif;
     font-size: 30px;
     overflow-x: hidden;
+     background: linear-gradient(135deg, #1a0b2e 0%, #52357B 100%);
 }
 
 
@@ -43,19 +46,19 @@ body {
     align-items: center;      
 }
 
-h2{
+h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 0;
     margin-right: 0;
+    color: #FFB7C5; 
+    text-shadow: 0 0 15px rgba(255, 183, 197, 0.6);
 }
-
-h1{
+h2, p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 0;
     margin-right: 0;
+    color: #FFD1DC;
 }
-
-
 h2:hover{
     color: palevioletred;
 }
@@ -68,7 +71,7 @@ h2:hover{
     list-style: none;
     padding: 40px 0;
     margin: 0 auto;
-    
+    flex:wrap;
 }
 
 
@@ -118,6 +121,7 @@ transition: all 0.4s ease-in-out;
 }
 
 .playRandom{
+cursor:pointer;
 display:flex;
 align-content: center;
 justify-content: center;
@@ -125,6 +129,7 @@ justify-content: center;
 
 .seeBackgroundButtons{
     margin-left:300px;
+    cursor:pointer;
 }
 
 .hiddenBackgrounds{
@@ -133,24 +138,20 @@ justify-content: center;
  
 
 .redColor{
-    background-color:red !important;
+    background:red;
 }
 
 .blueColor{
-    background-color: blue;
+    background: blue;
 }
 
 .aquaColor{
-
+    background:aqua;
 }
 
 .yellowColor{
-
+    background:yellow;
 }
-/* .changingBackground{
-    display:flex;
-    padding-left: 1050px;
-} */
 
 @media(max-width:700px){
     *{}

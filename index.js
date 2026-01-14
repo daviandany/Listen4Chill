@@ -124,19 +124,36 @@ $("#seeBackgroundButtons").on("click", function(){
 
 $('#colorRed').on("click", function(event){
 $("body").toggleClass('redColor');
-$('#colorRed')
-    
 })
 
 $("#colorBlue").on("click", function(){
     $("body").toggleClass('blueColor');
 })
 
+$('#colorAqua').on("click", function(){
+    $("body").toggleClass('aquaColor');
+})
+
+$("#colorYellow").on("click", function(){
+    $("body").toggleClass('yellowColor');
+})
+
+function resetColors(){
+$("body").removeClass("redColor blueColor aquaColor yellowColor")
+}
+
+$("#backColor").on("click", function(){
+resetColors();
+})
 
 
 //to do:
-//do stop button to random button
-//do night mode
+//animation after switching background color
+//do array color objects to backgrounds
+//back color after changing to another
+//do volume control
+//change images
+//play in row
 
 
 
