@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^5.2.1",
+    "jquery": "^4.0.0"
+  },
+  "name": "listen-4-chill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviandany/Listen4Chill.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviandany/Listen4Chill/issues"
+  },
+  "homepage": "https://github.com/daviandany/Listen4Chill#readme"
+}

@@ -154,6 +154,7 @@ resetColors();
 //do volume control
 //change images
 //play in row
+//about collaborators
 
 
 
