@@ -151,7 +151,6 @@ $("#backColor").on("click", function () {
 
 
 //to do:
-//animation after switching background color
 //do array color objects to backgrounds
 //back color after changing to another
 //do volume control

@@ -120,21 +120,22 @@ h2:hover {
 
 .random-music {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    gap: 20px;
+    gap: 15px;
 }
 
-.playRandom {
-    cursor: pointer;
+.buttons-row {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.playRandom button {
+.btn-primary {
     background-color: var(--Violata);
     color: var(--branco);
     border: none;
@@ -147,29 +148,68 @@ h2:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.playRandom button:hover {
+.btn-primary:hover {
     background-color: var(--Azul-indigo);
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-.seeBackgroundButtons {
-    cursor: pointer;
+
+
+
+.hiddenColor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
+.hiddenColor button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.hiddenColor button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#colorRed {
+    border-left: 4px solid red;
+}
+
+#colorBlue {
+    border-left: 4px solid blue;
+}
+
+#colorAqua {
+    border-left: 4px solid aqua;
+}
+
+#colorYellow {
+    border-left: 4px solid yellow;
+}
 
 .redColor {
-    background: red;
+    background: linear-gradient(135deg, #420a0a 0%, #a31d1d 100%);
 }
 
 .blueColor {
-    background: blue;
+    background: linear-gradient(135deg, #0a1a42 0%, #1d4da3 100%);
 }
 
 .aquaColor {
-    background: aqua;
+    background: linear-gradient(135deg, #0a3a42 0%, #1da396 100%);
 }
 
 .yellowColor {
-    background: yellow;
+    background: linear-gradient(135deg, #423a0a 0%, #a3961d 100%);
 }

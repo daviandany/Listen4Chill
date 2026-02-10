@@ -19,30 +19,26 @@
     </section>
 
     <section class="musicas">
-    <ul class="lista-musicas"></ul>
-</section>
+        <ul class="lista-musicas"></ul>
+    </section>
 
-<section class="random-music">
-
-<div class="playRandom">
-<button onclick="playRandomMusic()">Play random</button>
-</div>
-        <div class="hiddenBackgrounds"> 
-        <button id="seeBackgroundButtons">change backgrounds</button>
-
-    <div class="hiddenColor"> 
-        <button id="colorRed">color1</button>
-        <button id="colorBlue">color2</button>
-        <button id="colorAqua">color3</button>
-        <button id="colorYellow">color4</button>
-        <button id="backColor">back Original Color</button>
-    </div>
+    <section class="random-music">
+        <div class="buttons-row">
+            <button class="btn-primary" onclick="playRandomMusic()">Play random</button>
+            <button id="seeBackgroundButtons" class="btn-primary">change backgrounds</button>
         </div>
-</section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="./index.js" charset="utf-8"></script>
+        <div class="hiddenColor">
+            <button id="colorRed">color1</button>
+            <button id="colorBlue">color2</button>
+            <button id="colorAqua">color3</button>
+            <button id="colorYellow">color4</button>
+            <button id="backColor">back Original Color</button>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js" charset="utf-8"></script>
 </body>
 
 </html>
-
