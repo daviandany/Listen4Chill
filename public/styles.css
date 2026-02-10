@@ -23,7 +23,7 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 30px;
     overflow-x: hidden;
-     background: linear-gradient(135deg, #1a0b2e 0%, #52357B 100%);
+    background: linear-gradient(135deg, #1a0b2e 0%, #52357B 100%);
 }
 
 
@@ -33,45 +33,48 @@ body {
     padding-top: 4rem;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    display: flex;             
-    justify-content: center;   
-    align-items: center;       
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-select {
     margin-top: 4rem;
     text-align: center;
-    display: flex;            
-    justify-content: center;   
-    align-items: center;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 0;
     margin-right: 0;
-    color: #FFB7C5; 
+    color: #FFB7C5;
     text-shadow: 0 0 15px rgba(255, 183, 197, 0.6);
 }
-h2, p {
+
+h2,
+p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 0;
     margin-right: 0;
     color: #FFD1DC;
 }
-h2:hover{
+
+h2:hover {
     color: palevioletred;
 }
 
 .lista-musicas {
     display: flex;
     /* grid-template-columns: repeat(2, 300px);  */
-    gap: 60px;                               
-    justify-content: center;                
+    gap: 60px;
+    justify-content: center;
     list-style: none;
     padding: 40px 0;
     margin: 0 auto;
-    flex:wrap;
+    flex: wrap;
 }
 
 
@@ -83,76 +86,90 @@ h2:hover{
     color: var(--branco);
     transition: box-shadow 0.5s ease, transform 0.5s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .musica img {
-    width: 100%; 
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
-    transition:transform 1.2 ease;
+    transition: transform 1.2 ease;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
-.musica:hover{
-color: palevioletred;
-transform: translateY(-16px);
-cursor:pointer;
-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+.musica:hover {
+    color: palevioletred;
+    transform: translateY(-16px);
+    cursor: pointer;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 
 }
 
-.changeTitle{
-    color:darkcyan;
+.changeTitle {
+    color: darkcyan;
 }
 
-.opacityToMusics{
-opacity: 0.2;
-transition: all 0.4s ease-in-out;
+.opacityToMusics {
+    opacity: 0.2;
+    transition: all 0.4s ease-in-out;
 }
+
 
 .random-music {
-    display:flex;
+    display: flex;
     justify-content: center;
-    margin-right:-600px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
 }
 
-.playRandom{
-cursor:pointer;
-display:flex;
-align-content: center;
-justify-content: center;
+.playRandom {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.seeBackgroundButtons{
-    margin-left:300px;
-    cursor:pointer;
+.playRandom button {
+    background-color: var(--Violata);
+    color: var(--branco);
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.hiddenBackgrounds{
- margin-left:300px;
-}
- 
-
-.redColor{
-    background:red;
+.playRandom button:hover {
+    background-color: var(--Azul-indigo);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
-.blueColor{
+.seeBackgroundButtons {
+    cursor: pointer;
+}
+
+
+.redColor {
+    background: red;
+}
+
+.blueColor {
     background: blue;
 }
 
-.aquaColor{
-    background:aqua;
+.aquaColor {
+    background: aqua;
 }
 
-.yellowColor{
-    background:yellow;
+.yellowColor {
+    background: yellow;
 }
-
-@media(max-width:700px){
-    *{}
-};
