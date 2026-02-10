@@ -126,23 +126,29 @@ $("#seeBackgroundButtons").on("click", function () {
 })
 
 $('#colorRed').on("click", function (event) {
+    resetColors();
     $("body").toggleClass('redColor');
 })
 
 $("#colorBlue").on("click", function () {
+    resetColors();
     $("body").toggleClass('blueColor');
 })
 
 $('#colorAqua').on("click", function () {
+    resetColors();
     $("body").toggleClass('aquaColor');
 })
 
 $("#colorYellow").on("click", function () {
+    resetColors();
     $("body").toggleClass('yellowColor');
 })
 
+const colorArray = ["redColor", "blueColor", "aquaColor", "yellowColor"]
+
 function resetColors() {
-    $("body").removeClass("redColor blueColor aquaColor yellowColor")
+    $("body").removeClass(colorArray)
 }
 
 $("#backColor").on("click", function () {
