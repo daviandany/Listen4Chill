@@ -17,14 +17,14 @@
 }
 
 
-
+/* add color transition */
 body {
     min-height: 100vh;
     font-family: "Inter", sans-serif;
     font-size: 30px;
     overflow-x: hidden;
     background: linear-gradient(135deg, #1a0b2e 0%, #52357B 100%);
-}
+} 
 
 
 .title {
@@ -68,7 +68,6 @@ h2:hover {
 
 .lista-musicas {
     display: flex;
-    /* grid-template-columns: repeat(2, 300px);  */
     gap: 60px;
     justify-content: center;
     list-style: none;
@@ -110,6 +109,7 @@ h2:hover {
 
 .changeTitle {
     color: darkcyan;
+    transition: all 1s;
 }
 
 .opacityToMusics {
@@ -199,17 +199,22 @@ h2:hover {
 }
 
 .redColor {
-    background: linear-gradient(135deg, #420a0a 0%, #a31d1d 100%);
+    transition: all 2s;
+    background: rgb(167, 37, 37);
+
 }
 
 .blueColor {
-    background: linear-gradient(135deg, #0a1a42 0%, #1d4da3 100%);
+    background: rgb(49, 49, 191);
+    transition: all 2s;
 }
 
 .aquaColor {
-    background: linear-gradient(135deg, #0a3a42 0%, #1da396 100%);
+    background: rgb(28, 180, 129);
+    transition: all 2s;
 }
 
 .yellowColor {
-    background: linear-gradient(135deg, #423a0a 0%, #a3961d 100%);
+    background:rgb(207, 207, 41);
+    transition: all 2s;
 }
