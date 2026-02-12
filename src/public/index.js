@@ -1,9 +1,9 @@
 //array de objetos
 const musicas = [
-    { id: 1, nome: "Lofi Relax", img: "img/exemplo1.jpg", audio: "musicas/musica1.mp3", key: "1" },
-    { id: 2, nome: "Estudo Intenso", img: "img/exemplo1.jpg", audio: "musicas/musica2.mp3", key: "2" },
-    { id: 3, nome: "Noite de Chuva", img: "img/exemplo1.jpg", audio: "musicas/musica3.mp3", key: "3" },
-    { id: 4, nome: "Café da Manhã", img: "img/exemplo1.jpg", audio: "musicas/musica4.mp3", key: "4" },
+    { id: 1, nome: "Lofi Relax", img: "assets/img/exemplo1.jpg", audio: "assets/musicas/musica1.mp3", key: "1" },
+    { id: 2, nome: "Estudo Intenso", img: "assets/img/exemplo1.jpg", audio: "assets/musicas/musica2.mp3", key: "2" },
+    { id: 3, nome: "Noite de Chuva", img: "assets/img/exemplo1.jpg", audio: "assets/musicas/musica3.mp3", key: "3" },
+    { id: 4, nome: "Café da Manhã", img: "assets/img/exemplo1.jpg", audio: "assets/musicas/musica4.mp3", key: "4" },
 ];
 
 const $container = $(".lista-musicas");
